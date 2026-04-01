@@ -3,65 +3,139 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>STEMplify Resources</title>
+  <title>STEM Racing India | Resources</title>
 
   <style>
     body {
+      margin: 0;
       font-family: Arial, sans-serif;
-      background-color: #f4f6f8;
+      background-color: #0a0f22;
+      color: white;
       text-align: center;
-      padding: 40px;
     }
 
     h1 {
-      color: #2c3e50;
+      margin-top: 30px;
+      color: whitesmoke;
+      letter-spacing: 1px;
     }
 
+    p {
+      color: #ccc;
+      margin-bottom: 30px;
+    }
+
+    /* Container */
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+      padding: 20px;
+    }
+
+    /* Card */
     .card {
-      background: white;
-      padding: 30px;
-      margin: 20px auto;
-      width: 300px;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      background: #2d334f;
+      border-radius: 12px;
+      padding: 25px;
+      width: 280px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+      transition: 0.3s;
+      border-top: 4px solid #7a041b;
     }
 
-    a {
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 25px rgba(255, 46, 46, 0.4);
+    }
+
+    .card h2 {
+      margin-bottom: 10px;
+      color: whitesmoke; /* yellow from your poster */
+    }
+
+    .card p {
+      font-size: 14px;
+      color: #aaa;
+    }
+
+    /* Button */
+    .btn {
       display: inline-block;
       margin-top: 15px;
       padding: 12px 20px;
-      background-color: #1e90ff;
+      background: linear-gradient(90deg, #4b2984, #ea067b);
       color: white;
       text-decoration: none;
       border-radius: 6px;
       font-weight: bold;
+      transition: 0.3s;
     }
 
-    a:hover {
-      background-color: #0b65c2;
+    .btn:hover {
+      transform: scale(1.08);
+      box-shadow: 0 0 15px rgba(255, 46, 46, 0.7);
+    }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+      .card {
+        width: 45%;
+      }
+    }
+
+    @media (max-width: 500px) {
+      .card {
+        width: 90%;
+      }
     }
   </style>
 </head>
 
 <body>
 
-  <h1>📚 STEMplify Resources</h1>
-  <p>GD Goenka School | STEMPLIFY</p>
+  <h1>🏎️ STEM Racing India</h1>
+  <p>Select your grade to access study materials</p>
 
-  <div class="card">
-    <h2>Grade 7</h2>
-    <p>Playlist, Worksheets and Projects</p>
-    <a href="https://drive.google.com/drive/folders/19Yk64aNdrSPNBgey3Zk4Dv9XBDPQDNW0?usp=sharing" target="_blank">
-      Open Resources
-    </a>
-  </div>
+  <div class="container">
 
-  <div class="card">
-    <h2>Grade 8 and 9</h2>
-    <p>Playlist, Worksheets and Projects</p>
-    <a href="https://drive.google.com/drive/folders/19pfbElTbC5OcH2FZkwk8iM21G10XUeff?usp=sharing" target="_blank">
-      Open Resources
-    </a>
+    <div class="card">
+      <h2>Grade 4</h2>
+      <p>Access all study materials</p>
+      <a href="https://drive.google.com/drive/folders/1M0-hxdBydkgSOUKgEqYJ-wzpORXrmeey?usp=drive_link" class="btn">Open Resources</a>
+    </div>
+
+    <div class="card">
+      <h2>Grade 5</h2>
+      <p>Access all study materials</p>
+      <a href="https://drive.google.com/drive/folders/15WV4gAg6yv1oD4IDeTuzpA-6PgwUBy5R?usp=sharing" class="btn">Open Resources</a>
+    </div>
+
+    <div class="card">
+      <h2>Grade 6</h2>
+      <p>Access all study materials</p>
+      <a href="https://drive.google.com/drive/folders/11w8Np3L8jbTyaj12GVMTHh2raPKAZXCl?usp=sharing" class="btn">Open Resources</a>
+    </div>
+
+    <div class="card">
+      <h2>Grade 7</h2>
+      <p>Access all study materials</p>
+      <a href="https://drive.google.com/drive/folders/19Yk64aNdrSPNBgey3Zk4Dv9XBDPQDNW0?usp=sharing" class="btn">Open Resources</a>
+    </div>
+
+    <div class="card">
+      <h2>Grade 8</h2>
+      <p>Access all study materials</p>
+      <a href="https://drive.google.com/drive/folders/19pfbElTbC5OcH2FZkwk8iM21G10XUeff?usp=sharing" class="btn">Open Resources</a>
+    </div>
+
+    <div class="card">
+      <h2>Grade 9</h2>
+      <p>Access all study materials</p>
+      <a href="https://drive.google.com/drive/folders/1aGFeqtN7kcZPG97JsmK1zPCF26lBLOt3?usp=sharing" class="btn">Open Resources</a>
+    </div>
+
   </div>
 
 </body>
